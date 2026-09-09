@@ -1,0 +1,105 @@
+{
+    "recordedAtUtc": "2026-09-09T08:55:58.8239820Z",
+    "unityVersion": "6000.6.0f1",
+    "platform": "OSXEditor",
+    "passed": true,
+    "checksPassed": 15,
+    "checksTotal": 15,
+    "seededPopulation": 2124,
+    "seededJobs": 1356,
+    "seededNetIncome": 1102.414306640625,
+    "seededPowerUse": 3301.799560546875,
+    "seededWaterUse": 1822.4404296875,
+    "checks": [
+        {
+            "name": "Populated seed is connected, supplied, and economically viable",
+            "passed": true,
+            "detail": "Population 2124, jobs 1356, daily net 1102.41; 222 occupied tiles served.",
+            "milliseconds": 6.0713
+        },
+        {
+            "name": "Road placement charges each new tile exactly once",
+            "passed": true,
+            "detail": "10 new road cells charged; redraw charges zero; endpoint connected.",
+            "milliseconds": 4.0405
+        },
+        {
+            "name": "Unaffordable and water-crossing roads are rejected atomically",
+            "passed": true,
+            "detail": "Both rejected paths preserved funds and every road cell.",
+            "milliseconds": 5.1248000000000005
+        },
+        {
+            "name": "Road severing disconnects a neighborhood and reconnecting repairs it",
+            "passed": true,
+            "detail": "Severed the only access road, observed disconnection, rebuilt and recovered access/services.",
+            "milliseconds": 7.9836
+        },
+        {
+            "name": "New serviced housing develops while isolated zoning does not",
+            "passed": true,
+            "detail": "Served zone grew to level 1 with 16 residents; isolated zone remained unoccupied.",
+            "milliseconds": 130.7578
+        },
+        {
+            "name": "Power loss prevents development; rebuilding restores service",
+            "passed": true,
+            "detail": "Power removal stopped development for 10 days; restoration yielded 16 residents.",
+            "milliseconds": 167.14860000000002
+        },
+        {
+            "name": "Water loss prevents development; rebuilding restores service",
+            "passed": true,
+            "detail": "Water removal stopped development for 10 days; restoration yielded 16 residents.",
+            "milliseconds": 167.62900000000002
+        },
+        {
+            "name": "Computed road paths are continuous and respect broken links",
+            "passed": true,
+            "detail": "18-node cardinal route verified, then severed link made destination unreachable.",
+            "milliseconds": 4.115200000000001
+        },
+        {
+            "name": "Save and load preserve authored tiles, population, funds, date, and tax",
+            "passed": true,
+            "detail": "Round-tripped 2304 tiles, date, economy, tax and occupancy; loaded save advanced successfully.",
+            "milliseconds": 86.8353
+        },
+        {
+            "name": "Malformed and incomplete saves are rejected without losing the active city",
+            "passed": true,
+            "detail": "Empty, malformed, missing-schema and empty-tile saves rejected transactionally.",
+            "milliseconds": 12.636700000000001
+        },
+        {
+            "name": "Higher taxes increase receipts and day progression books the operating budget",
+            "passed": true,
+            "detail": "Tax receipts at 5%: 714.82; at 17%: 2311.85; first-day treasury change 1213.88.",
+            "milliseconds": 22.5897
+        },
+        {
+            "name": "Four-month simulation remains finite and internally consistent",
+            "passed": true,
+            "detail": "120 simulation days; final population 4208, jobs 1356, treasury 362915.90; all daily invariants held.",
+            "milliseconds": 1569.7445
+        },
+        {
+            "name": "Starter town has room to grow and locked projects charge nothing",
+            "passed": true,
+            "detail": "24 residents, 6 buildings, 13 roads, $30,000; locked projects atomic; first new home occupied after 2.5 simulation days.",
+            "milliseconds": 18.6253
+        },
+        {
+            "name": "Unfunded starter grows through offices and towers to a viable stadium city",
+            "passed": true,
+            "detail": "No injected funds: 24→609 residents; offices day 6, towers day 11, stadium day 19; lowest treasury $11719, final $17367, net +$197/day; occupied towers, working offices, served 3×3 stadium and save round-trip verified.",
+            "milliseconds": 157.0264
+        },
+        {
+            "name": "Landmark footprints reject overlap and malformed saves transactionally",
+            "passed": true,
+            "detail": "3×3 footprint prevents overlap, charges once, resolves corners to center, validates every saved reservation and clears atomically.",
+            "milliseconds": 22.4313
+        }
+    ]
+}

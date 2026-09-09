@@ -1,0 +1,251 @@
+{
+  "scope": "Game development through v0.2.1 completion; excludes subsequent documentation and GitHub publication work.",
+  "cutoff_utc": "2026-09-09T09:50:11.818Z",
+  "first_task_started_utc": "2026-09-08T22:34:56.803Z",
+  "elapsed_wall_seconds": 40515.015,
+  "recorded_primary_task_seconds": 9162.978,
+  "primary_task_intervals": [
+    {
+      "started_utc": "2026-09-08T22:34:56.803Z",
+      "ended_utc": "2026-09-09T07:37:26.339Z",
+      "state": "turn_aborted",
+      "recorded_duration_seconds": 3403.285
+    },
+    {
+      "started_utc": "2026-09-09T07:43:48.441Z",
+      "ended_utc": "2026-09-09T08:20:48.459Z",
+      "state": "task_complete",
+      "recorded_duration_seconds": 2220.028
+    },
+    {
+      "started_utc": "2026-09-09T08:29:37.513Z",
+      "ended_utc": "2026-09-09T08:29:59.521Z",
+      "state": "task_complete",
+      "recorded_duration_seconds": 22.009
+    },
+    {
+      "started_utc": "2026-09-09T08:30:39.746Z",
+      "ended_utc": "2026-09-09T08:33:48.447Z",
+      "state": "turn_aborted",
+      "recorded_duration_seconds": 188.701
+    },
+    {
+      "started_utc": "2026-09-09T08:40:59.323Z",
+      "ended_utc": "2026-09-09T09:15:56.491Z",
+      "state": "task_complete",
+      "recorded_duration_seconds": 2097.16
+    },
+    {
+      "started_utc": "2026-09-09T09:29:39.985Z",
+      "ended_utc": "2026-09-09T09:50:11.818Z",
+      "state": "task_complete",
+      "recorded_duration_seconds": 1231.795
+    }
+  ],
+  "totals": {
+    "input_tokens": 45001539,
+    "cached_input_tokens": 43595392,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 285783,
+    "reasoning_output_tokens": 80824,
+    "total_tokens": 45287322,
+    "uncached_input_tokens": 1406147,
+    "responses": 526,
+    "api_standard_equivalent_usd": 71.946012
+  },
+  "agents": {
+    "/root": {
+      "responses": 239,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 27805843,
+      "cached_input_tokens": 27083776,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 130202,
+      "reasoning_output_tokens": 45999,
+      "total_tokens": 27936045,
+      "uncached_input_tokens": 722067,
+      "recorded_task_duration_seconds": 9162.978,
+      "api_standard_equivalent_usd": 40.814546
+    },
+    "/root/simulation": {
+      "responses": 21,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 867326,
+      "cached_input_tokens": 832128,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 15534,
+      "reasoning_output_tokens": 3152,
+      "total_tokens": 882860,
+      "uncached_input_tokens": 35198,
+      "recorded_task_duration_seconds": 953.287,
+      "api_standard_equivalent_usd": 1.960808
+    },
+    "/root/city_art": {
+      "responses": 43,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 2069744,
+      "cached_input_tokens": 2023552,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 24967,
+      "reasoning_output_tokens": 4805,
+      "total_tokens": 2094711,
+      "uncached_input_tokens": 46192,
+      "recorded_task_duration_seconds": 1088.253,
+      "api_standard_equivalent_usd": 3.733822
+    },
+    "/root/quality_assets": {
+      "responses": 48,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 3223442,
+      "cached_input_tokens": 3070080,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 17537,
+      "reasoning_output_tokens": 3292,
+      "total_tokens": 3240979,
+      "uncached_input_tokens": 153362,
+      "recorded_task_duration_seconds": 765.836,
+      "api_standard_equivalent_usd": 5.48055
+    },
+    "/root/build_review": {
+      "responses": 10,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 512323,
+      "cached_input_tokens": 472192,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1508,
+      "reasoning_output_tokens": 120,
+      "total_tokens": 513831,
+      "uncached_input_tokens": 40131,
+      "recorded_task_duration_seconds": 74.386,
+      "api_standard_equivalent_usd": 0.948902
+    },
+    "/root/visual_refinement": {
+      "responses": 19,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 1043833,
+      "cached_input_tokens": 989952,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7951,
+      "reasoning_output_tokens": 1728,
+      "total_tokens": 1051784,
+      "uncached_input_tokens": 53881,
+      "recorded_task_duration_seconds": 308.776,
+      "api_standard_equivalent_usd": 1.926312
+    },
+    "/root/runtime_validation": {
+      "responses": 15,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 782407,
+      "cached_input_tokens": 740992,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8587,
+      "reasoning_output_tokens": 1530,
+      "total_tokens": 790994,
+      "uncached_input_tokens": 41415,
+      "recorded_task_duration_seconds": 407.59499999999997,
+      "api_standard_equivalent_usd": 1.584492
+    },
+    "/root/growth_revision": {
+      "responses": 23,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 1298457,
+      "cached_input_tokens": 1229440,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 14805,
+      "reasoning_output_tokens": 5209,
+      "total_tokens": 1313262,
+      "uncached_input_tokens": 69017,
+      "recorded_task_duration_seconds": 596.132,
+      "api_standard_equivalent_usd": 2.65986
+    },
+    "/root/art_revision": {
+      "responses": 55,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 4592566,
+      "cached_input_tokens": 4480256,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 29227,
+      "reasoning_output_tokens": 6466,
+      "total_tokens": 4621793,
+      "uncached_input_tokens": 112310,
+      "recorded_task_duration_seconds": 1326.348,
+      "api_standard_equivalent_usd": 7.064706
+    },
+    "/root/ui_revision": {
+      "responses": 21,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 1279021,
+      "cached_input_tokens": 1224704,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 13972,
+      "reasoning_output_tokens": 4032,
+      "total_tokens": 1292993,
+      "uncached_input_tokens": 54317,
+      "recorded_task_duration_seconds": 540.746,
+      "api_standard_equivalent_usd": 2.466474
+    },
+    "/root/audio_assets": {
+      "responses": 23,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 1118952,
+      "cached_input_tokens": 1072256,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 12765,
+      "reasoning_output_tokens": 3394,
+      "total_tokens": 1131717,
+      "uncached_input_tokens": 46696,
+      "recorded_task_duration_seconds": 459.536,
+      "api_standard_equivalent_usd": 2.177466
+    },
+    "/root/audio_validation": {
+      "responses": 9,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "input_tokens": 407625,
+      "cached_input_tokens": 376064,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8728,
+      "reasoning_output_tokens": 1097,
+      "total_tokens": 416353,
+      "uncached_input_tokens": 31561,
+      "recorded_task_duration_seconds": 464.67,
+      "api_standard_equivalent_usd": 1.128074
+    }
+  },
+  "excluded": {
+    "automatic_review_sessions": 13
+  },
+  "methodology": [
+    "Use token_usage_record.usage once per distinct response ID; filter each record to its owning thread. Do not sum repeated token_count events or cumulative thread totals.",
+    "Include the root and all retained development subagents associated with this project session, including interrupted work. Exclude automatic approval review sessions and other tasks.",
+    "Cached and cache-write tokens are subsets of input; reasoning tokens are a subset of output. They are not added again to totals.",
+    "Task duration is the app-recorded duration_ms for ended primary turns, including interrupted turns. It is not the difference between start/end wall timestamps and is not a human labor timesheet. Parallel subagent durations are reported separately and are not added to elapsed development time.",
+    "Dollar figures are standard API-equivalent estimates, not an invoice. All counted responses are gpt-6-astra and below272000 input tokens. Rates checked2026-09-09: uncached10, cached1, cache-write12.50, output50 USD per million. Excludes subscription allocation, tools, taxes, infrastructure and speed-tier multipliers."
+  ],
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "actual_billed_project_cost_usd": null,
+  "max_input_tokens_per_response": 222665
+}

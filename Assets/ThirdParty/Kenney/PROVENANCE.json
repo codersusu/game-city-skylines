@@ -1,0 +1,52 @@
+[
+  {
+    "pack": "commercial",
+    "source": "https://kenney.nl/assets/city-kit-commercial",
+    "archive_sha256": "f8b09b081c2bb88bcc126e2dec1cb40fd0dad7e7e591b6c26aaefe96fb35276b",
+    "license": "CC0 1.0",
+    "formats_available": [
+      "FBX",
+      "GLB",
+      "OBJ"
+    ],
+    "imported_format": "FBX"
+  },
+  {
+    "pack": "suburban",
+    "source": "https://kenney.nl/assets/city-kit-suburban",
+    "archive_sha256": "5869c35cf30b1c87bdb2d197b6d325eebadd2ef08ea27f04797e8e08d77a9a39",
+    "license": "CC0 1.0",
+    "formats_available": [
+      "FBX",
+      "GLB",
+      "OBJ"
+    ],
+    "imported_format": "FBX"
+  },
+  {
+    "pack": "industrial",
+    "source": "https://kenney.nl/assets/city-kit-industrial",
+    "archive_sha256": "5b381164e5760f3830a2dbee43b972deee38b2a695d091b56e238ab2910c96d2",
+    "license": "CC0 1.0",
+    "formats_available": [
+      "FBX",
+      "GLB",
+      "OBJ"
+    ],
+    "imported_format": "FBX"
+  },
+  {
+    "pack": "cars",
+    "source": "https://kenney.nl/assets/car-kit",
+    "archive_sha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+    "license": "CC0 1.0",
+    "imported_format": "FBX"
+  },
+  {
+    "pack": "watercraft",
+    "source": "https://kenney.nl/assets/watercraft-kit",
+    "archive_sha256": "cd1470c1cf441c7f46d0944ae6d0d897242365dc97677c5079b3238965d659f3",
+    "license": "CC0 1.0",
+    "imported_format": "FBX"
+  }
+]

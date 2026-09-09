@@ -1,0 +1,18 @@
+Poly Haven material assets — CC0 1.0 Universal
+
+Official asset license: https://polyhaven.com/license
+CC0 dedication: https://creativecommons.org/publicdomain/zero/1.0/
+Powered by Poly Haven — https://polyhaven.com
+Downloaded 2026-09-09 through the official public API and asset CDN.
+These files are source textures, not provider example renders.
+
+grass_path_2 — Rob Tuytel
+https://polyhaven.com/a/grass_path_2
+asphalt_02 — Rob Tuytel
+https://polyhaven.com/a/asphalt_02
+concrete_wall_008 — Dario Barresi, Charlotte Baglioni
+https://polyhaven.com/a/concrete_wall_008
+red_brick_03 — Rob Tuytel
+https://polyhaven.com/a/red_brick_03
+leafy_grass — Charlotte Baglioni
+https://polyhaven.com/a/leafy_grass

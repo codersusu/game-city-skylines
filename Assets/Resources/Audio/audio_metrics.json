@@ -1,0 +1,137 @@
+{
+  "music_coastal": {
+    "duration_seconds": 48.0,
+    "rms_dbfs": -19.69,
+    "peak_dbfs": -7.91,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": true,
+    "clipped_samples": 0
+  },
+  "ambience_coast": {
+    "duration_seconds": 24.0,
+    "rms_dbfs": -20.92,
+    "peak_dbfs": -5.51,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": true,
+    "clipped_samples": 0
+  },
+  "ambience_town": {
+    "duration_seconds": 24.0,
+    "rms_dbfs": -25.07,
+    "peak_dbfs": -7.13,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": true,
+    "clipped_samples": 0
+  },
+  "ambience_birds": {
+    "duration_seconds": 24.0,
+    "rms_dbfs": -31.8,
+    "peak_dbfs": -10.9,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": true,
+    "clipped_samples": 0
+  },
+  "ambience_night": {
+    "duration_seconds": 24.0,
+    "rms_dbfs": -30.21,
+    "peak_dbfs": -11.77,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": true,
+    "clipped_samples": 0
+  },
+  "ui_click": {
+    "duration_seconds": 0.16,
+    "rms_dbfs": -19.71,
+    "peak_dbfs": -10.36,
+    "dc_offset": 1e-07,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  },
+  "zone_paint": {
+    "duration_seconds": 0.26,
+    "rms_dbfs": -19.7,
+    "peak_dbfs": -9.77,
+    "dc_offset": 2e-07,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  },
+  "facility_build": {
+    "duration_seconds": 1.05,
+    "rms_dbfs": -19.7,
+    "peak_dbfs": -9.02,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  },
+  "denied": {
+    "duration_seconds": 0.42,
+    "rms_dbfs": -19.69,
+    "peak_dbfs": -10.57,
+    "dc_offset": 1e-07,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  },
+  "milestone": {
+    "duration_seconds": 2.3,
+    "rms_dbfs": -18.3,
+    "peak_dbfs": -5.46,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  },
+  "save": {
+    "duration_seconds": 0.65,
+    "rms_dbfs": -19.68,
+    "peak_dbfs": -10.92,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  },
+  "load": {
+    "duration_seconds": 0.77,
+    "rms_dbfs": -19.7,
+    "peak_dbfs": -9.03,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  },
+  "grow": {
+    "duration_seconds": 0.78,
+    "rms_dbfs": -19.7,
+    "peak_dbfs": -10.66,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  },
+  "road_build": {
+    "duration_seconds": 0.57,
+    "rms_dbfs": -20.66,
+    "peak_dbfs": -4.0,
+    "dc_offset": 1e-07,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  },
+  "bulldoze": {
+    "duration_seconds": 0.79,
+    "rms_dbfs": -20.06,
+    "peak_dbfs": -4.3,
+    "dc_offset": 0.0,
+    "edge_jump_dbfs": -200.0,
+    "loop": false,
+    "clipped_samples": 0
+  }
+}

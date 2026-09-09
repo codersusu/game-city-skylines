@@ -1,0 +1,163 @@
+[
+  {
+    "id": "grass_path_2",
+    "page": "https://polyhaven.com/a/grass_path_2",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions_mm": [
+      1000,
+      1000
+    ],
+    "files": [
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/grass_path_2_diff.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_path_2/grass_path_2_diff_1k.jpg",
+        "sha256": "7f30b163739435c11f500f3818c7bb4922bab5f2734cc9ba6dd36817f0c9a8ab",
+        "bytes": 716010
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/grass_path_2_normal.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_path_2/grass_path_2_nor_gl_1k.jpg",
+        "sha256": "4f6e911619d4c79a6bc340a64eac1e5fcbae8e54ea2674ed1892f6a9a1dfb5fa",
+        "bytes": 831959
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/grass_path_2_rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_path_2/grass_path_2_rough_1k.jpg",
+        "sha256": "2aaf4400e7892d643a4f64d7347f2a0ca65051b5cb0c1b5d0ef383a65a5fa172",
+        "bytes": 335245
+      }
+    ]
+  },
+  {
+    "id": "asphalt_02",
+    "page": "https://polyhaven.com/a/asphalt_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions_mm": [
+      3000.000238418579,
+      3000
+    ],
+    "files": [
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/asphalt_02_diff.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_diff_1k.jpg",
+        "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed",
+        "bytes": 731707
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/asphalt_02_normal.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_nor_gl_1k.jpg",
+        "sha256": "42a1c381b53204e83a982db2864479a30bc127bbdeebb1006f8ee51bff099df3",
+        "bytes": 1240122
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/asphalt_02_rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/asphalt_02/asphalt_02_rough_1k.jpg",
+        "sha256": "70ba3edc65525eb4dc366cf010ca7ae0bd34e0251ff0225c2dad627a873d0712",
+        "bytes": 544032
+      }
+    ]
+  },
+  {
+    "id": "concrete_wall_008",
+    "page": "https://polyhaven.com/a/concrete_wall_008",
+    "license": "CC0-1.0",
+    "authors": {
+      "Dario Barresi": "Processing ",
+      "Charlotte Baglioni": "Photography"
+    },
+    "dimensions_mm": [
+      2710.0000381469727,
+      2710.0000381469727
+    ],
+    "files": [
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/concrete_wall_008_diff.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_008/concrete_wall_008_diff_1k.jpg",
+        "sha256": "a203166d280d3cfc6a91bbc9ffdae406eb9555b4a4f658cd92619063eb17c147",
+        "bytes": 623051
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/concrete_wall_008_normal.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_008/concrete_wall_008_nor_gl_1k.jpg",
+        "sha256": "83cd3fa2c7cbf4c81402386065daf8fa6f72e1f1f77e02ccb1eedb28496909ae",
+        "bytes": 511519
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/concrete_wall_008_rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_008/concrete_wall_008_rough_1k.jpg",
+        "sha256": "2344fe72c4dc2fb9e4ce9b47079524ee8969f22c4af4bee85667511073fbf14a",
+        "bytes": 322313
+      }
+    ]
+  },
+  {
+    "id": "red_brick_03",
+    "page": "https://polyhaven.com/a/red_brick_03",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions_mm": [
+      1000,
+      1000
+    ],
+    "files": [
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/red_brick_03_diff.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick_03/red_brick_03_diff_1k.jpg",
+        "sha256": "9c58254c099b2d211478f50a427fcdde622af24249ff2e94da41fb836f8c857f",
+        "bytes": 694500
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/red_brick_03_normal.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick_03/red_brick_03_nor_gl_1k.jpg",
+        "sha256": "9bfd45e24720d851017c1e1678b70219c72239b2ac6b25e11d57d458bdab8503",
+        "bytes": 955430
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/red_brick_03_rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick_03/red_brick_03_rough_1k.jpg",
+        "sha256": "cd865623c1422926848024e877103e9dfe857b2ca8221fce49264b74c9ff48b1",
+        "bytes": 286623
+      }
+    ]
+  },
+  {
+    "id": "leafy_grass",
+    "page": "https://polyhaven.com/a/leafy_grass",
+    "license": "CC0-1.0",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "dimensions_mm": [
+      2000,
+      2000
+    ],
+    "files": [
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/leafy_grass_diff.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_diff_1k.jpg",
+        "sha256": "cfa40bc9d9417d1852db8753a8d5917f110c40101179f63543c382e39bc05e4a",
+        "bytes": 1195394
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/leafy_grass_normal.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_nor_gl_1k.jpg",
+        "sha256": "832328216adc0a7e1f70a31d5ee48c9ab7f2152d83816122736cf42ac4b2ebd6",
+        "bytes": 1466049
+      },
+      {
+        "path": "Assets/ThirdParty/PolyHaven/Resources/Surfaces/leafy_grass_rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_rough_1k.jpg",
+        "sha256": "0c2a1d91aacb8e54a496051b59854e51e456fe858abeade778e308359ef16463",
+        "bytes": 511385
+      }
+    ]
+  }
+]

@@ -1,0 +1,246 @@
+{
+    "passed": true,
+    "isEditor": false,
+    "roadBuilt": true,
+    "pointerSelected": true,
+    "uiBlocksWorldPointer": true,
+    "saveLoadPassed": true,
+    "seedRestored": true,
+    "startedUtc": "2026-09-09T09:07:05.7158150Z",
+    "completedUtc": "2026-09-09T09:07:54.2407340Z",
+    "unityVersion": "6000.6.0f1",
+    "applicationVersion": "0.2.0",
+    "buildGuid": "20f78c2a840842a0a9a2b2b3c0345cd1",
+    "platform": "OSXPlayer",
+    "operatingSystem": "Mac OS X 26.6.2",
+    "graphicsDevice": "Apple M5 Pro",
+    "graphicsApi": "Metal",
+    "processor": "Apple M5 Pro",
+    "qualityLevel": "Ultra",
+    "inputScope": "Programmatic down/held/up through CityGame.ProcessPointer, the live world pointer handler; no GUI button event synthesis.",
+    "logCaptureScope": "From playtest component Awake through completion, including screenshot rendering and restoration.",
+    "roadResult": "",
+    "savePath": "/Users/yanqima/Documents/ChatGPT/unity - city skyline/Artifacts/playtest-save.json",
+    "screenWidth": 1600,
+    "screenHeight": 1000,
+    "populationBefore": 24,
+    "populationAfter": 609,
+    "newRoadTiles": 5,
+    "zonesPainted": 39,
+    "developedNewLots": 3,
+    "newNeighborhoodResidents": 4,
+    "trafficVehicles": 9,
+    "trafficSampleDayAdvance": 0,
+    "errorCount": 0,
+    "exceptionCount": 0,
+    "assertCount": 0,
+    "warningCount": 0,
+    "durationSeconds": 48.52507781982422,
+    "roadCost": 400.0,
+    "zoningCost": 0.0,
+    "daysAdvancedForGrowth": 17.0,
+    "money": 17307.298828125,
+    "happiness": 76.77386474609375,
+    "trafficMotionMeters": 18.818946838378906,
+    "pedestrianMotionMeters": 4.178802490234375,
+    "firstDevelopmentRealSeconds": 17.13817024230957,
+    "lowestTreasury": 11589.7890625,
+    "pedestrians": 6,
+    "visibleVehiclePixels": 4006,
+    "visiblePedestrianPixels": 170,
+    "officeUnlockDay": 7,
+    "towerUnlockDay": 12,
+    "stadiumUnlockDay": 20,
+    "performance": {
+        "scenario": "Player-built city over 600 residents; HUD visible; simulation 1x; cars and pedestrians moving.",
+        "sampleFrames": 592,
+        "targetFrameRate": 60,
+        "vSyncCount": 1,
+        "warmupSecondsAfterScreenshot": 2.0,
+        "sampleSeconds": 5.008572101593018,
+        "meanFps": 118.19735717773438,
+        "p95FrameMs": 9.028203010559082,
+        "worstFrameMs": 66.34953308105469
+    },
+    "checks": [
+        {
+            "name": "starts with a small supplied settlement",
+            "detail": "24 residents, 13 road cells, $30000. No established skyline.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 01-starter-settlement.png",
+            "detail": "2220838 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "locked office rejects placement without charging money",
+            "detail": "Reach 150 residents to unlock Office.",
+            "passed": true
+        },
+        {
+            "name": "HUD intercepts a construction click over buildable world land",
+            "detail": "Buildable empty tile beneath header (3,32); valid fixture=True; hover suppressed and simulation JSON unchanged=True.",
+            "passed": true
+        },
+        {
+            "name": "first road drag builds five connected segments for $400",
+            "detail": "5 segments; $400.",
+            "passed": true
+        },
+        {
+            "name": "three zone types remain distinct in simulation",
+            "detail": "Homes (16,23), shops (17,23), industry (10,26), all designated through the live pointer handler.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 02-distinct-zone-sites.png",
+            "detail": "2203887 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "homes shops and industry develop during normal 1x play",
+            "detail": "Observed real Update ticks for 17.1 seconds; levels 1/1/1.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 03-first-neighborhood.png",
+            "detail": "2206427 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "vehicle meshes render in the standalone game",
+            "detail": "4006 non-background pixels from isolated layer 8 in actual standalone render readback. Positions alone do not establish visibility.",
+            "passed": true
+        },
+        {
+            "name": "pedestrian meshes render in the standalone game",
+            "detail": "170 non-background pixels from isolated layer 9 in actual standalone render readback. Positions alone do not establish visibility.",
+            "passed": true
+        },
+        {
+            "name": "cars and pedestrians move during normal play",
+            "detail": "9 cars, 6 walkers; sampled motion 18.82m and 4.18m over 2s at 1x.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 12-street-life.png",
+            "detail": "2470884 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "town growth unlocks offices at 150 residents",
+            "detail": "Day 7, 154 residents, $17526.",
+            "passed": true
+        },
+        {
+            "name": "growing town unlocks residential towers at 350 residents",
+            "detail": "Day 12, 365 residents.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 06-growing-town.png",
+            "detail": "2422204 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "occupied towers grow the city to the stadium milestone",
+            "detail": "609 residents by day 20; first tower houses 49.",
+            "passed": true
+        },
+        {
+            "name": "stadium reserves nine tiles and opens with services",
+            "detail": "3x3 stadium; 64 jobs; cost $14000; served=True.",
+            "passed": true
+        },
+        {
+            "name": "growth journey remains affordable and financially sustainable",
+            "detail": "Lowest treasury $11590; final $17307; net $197/day; no injected funds.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 07-grown-city.png",
+            "detail": "2485644 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 08-stadium-detail.png",
+            "detail": "2331863 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 09-modern-skyline.png",
+            "detail": "2623651 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 10-grown-city-night.png",
+            "detail": "1653573 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 11-supply-overlay.png",
+            "detail": "2511362 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "screenshot 13-toolbar-resized.png",
+            "detail": "3165943 bytes written; visual quality requires image review.",
+            "passed": true
+        },
+        {
+            "name": "HUD renders after window resize",
+            "detail": "Cached icon textures captured at 1920x1080 with a non-unit GUI scale; image reviewed separately.",
+            "passed": true
+        },
+        {
+            "name": "growth save uses isolated artifact slot",
+            "detail": "/Users/yanqima/Documents/ChatGPT/unity - city skyline/Artifacts/playtest-save.json",
+            "passed": true
+        },
+        {
+            "name": "save restores landmark footprint and earned unlocks",
+            "detail": "Saved city, bulldozed stadium through its footprint, loaded exact city JSON and permanent milestones.",
+            "passed": true
+        },
+        {
+            "name": "tower roof selection and bulldozing target the visible building",
+            "detail": "Clicked the actual tower collider roof: selected=True, exactly one tower removed=True, saved city restored.",
+            "passed": true
+        },
+        {
+            "name": "loading cancels an unfinished road stroke",
+            "detail": "Loaded while a road drag was active, then released; restored city remained byte-for-byte unchanged.",
+            "passed": true
+        },
+        {
+            "name": "active grown city sustains interactive performance",
+            "detail": "118.2 FPS; p95 9.03ms; 1600x1000 Metal, active city.",
+            "passed": true
+        },
+        {
+            "name": "seed restored and city controls reset",
+            "detail": "Full seed JSON restored; home camera, natural daylight, empty tool and selection; onboarding counters restored.",
+            "passed": true
+        },
+        {
+            "name": "no runtime errors, exceptions or assertions",
+            "detail": "Errors 0, exceptions 0, assertions 0, warnings 0.",
+            "passed": true
+        }
+    ],
+    "screenshots": [
+        "01-starter-settlement.png",
+        "02-distinct-zone-sites.png",
+        "03-first-neighborhood.png",
+        "12-street-life.png",
+        "06-growing-town.png",
+        "07-grown-city.png",
+        "08-stadium-detail.png",
+        "09-modern-skyline.png",
+        "10-grown-city-night.png",
+        "11-supply-overlay.png",
+        "13-toolbar-resized.png"
+    ],
+    "runtimeErrors": []
+}

@@ -1,0 +1,327 @@
+{
+    "passed": true,
+    "isEditor": false,
+    "startedUtc": "2026-09-09T09:46:17.2951980Z",
+    "completedUtc": "2026-09-09T09:46:43.5119500Z",
+    "applicationVersion": "0.2.1",
+    "buildGuid": "a701253cc0dc4b55883c5f51197f5ab2",
+    "unityVersion": "6000.6.0f1",
+    "platform": "OSXPlayer",
+    "operatingSystem": "Mac OS X 26.6.2",
+    "scope": "Audio-only standalone acceptance: real listener output, 12-second listener PCM recording, live world pointer handler, save/load, volume and ambience behavior. No repeated city-growth benchmark. Direct cue smoke tests establish playback only, not new milestone/growth gameplay.",
+    "inputScope": "Calls the same CityGame.ProcessPointer used by live mouse down/held/up. The sound panel opens via its public UI method; this does not synthesize operating-system clicks or slider drags.",
+    "measurementScope": "AudioListener.GetOutputData recent 2048-sample channel-0 windows after warmup; RMS is a sampled output estimate. The WAV is chronological listener OnAudioFilterRead PCM, written without normalization. No microphone or external loopback device.",
+    "savePath": "/Users/yanqima/Documents/ChatGPT/unity - city skyline/Artifacts/playtest-save.json",
+    "settingsScreenshot": "14-sound-settings.png",
+    "sampleRate": 48000,
+    "warningCount": 0,
+    "durationSeconds": 26.216903686523438,
+    "preview": {
+        "filename": "audio-preview.wav",
+        "sampleRate": 48000,
+        "channels": 2,
+        "sampleCount": 1152000,
+        "clippedSamples": 0,
+        "nonFiniteSamples": 0,
+        "durationSeconds": 12.0,
+        "rms": 0.058015674352645874,
+        "peak": 0.42236220836639404
+    },
+    "checks": [
+        {
+            "name": "all soundtrack, ambience and effects assets load",
+            "detail": "15 clips; all five looping sources playing=True.",
+            "passed": true
+        },
+        {
+            "name": "default sound controls are audible and unmuted",
+            "detail": "Master=0.85; music=0.48; ambience=0.8; effects=0.8.",
+            "passed": true
+        },
+        {
+            "name": "actual listener mix is audible without clipping",
+            "detail": "RMS=0.041522; peak=0.147400; 85 output windows over 0.71s.",
+            "passed": true
+        },
+        {
+            "name": "road construction emits its effect through live pointer input",
+            "detail": "Extended the starter road by three purchased cells through down/held/up input.",
+            "passed": true
+        },
+        {
+            "name": "a repeated road stroke does not emit a false build effect",
+            "detail": "Same existing road, unchanged treasury and unchanged Road cue count.",
+            "passed": true
+        },
+        {
+            "name": "zoning emits its effect through live pointer input",
+            "detail": "Residential designation placed beside the new road.",
+            "passed": true
+        },
+        {
+            "name": "repainting the same zone is silent",
+            "detail": "Unchanged zone designation, treasury and Zone cue count.",
+            "passed": true
+        },
+        {
+            "name": "facility placement emits its effect",
+            "detail": "Purchased a park using live world pointer input.",
+            "passed": true
+        },
+        {
+            "name": "demolition emits its effect",
+            "detail": "The placed park was demolished through the same live pointer path.",
+            "passed": true
+        },
+        {
+            "name": "bulldozing empty land is silent",
+            "detail": "No extra demolition cue for an empty site.",
+            "passed": true
+        },
+        {
+            "name": "locked facilities provide an audible denial",
+            "detail": "Selecting locked offices triggers the live denial path.",
+            "passed": true
+        },
+        {
+            "name": "save confirmation emits its effect",
+            "detail": "Saved only to /Users/yanqima/Documents/ChatGPT/unity - city skyline/Artifacts/playtest-save.json",
+            "passed": true
+        },
+        {
+            "name": "load confirmation emits its effect without a milestone replay",
+            "detail": "Loaded the same paused city; no extra milestone chime.",
+            "passed": true
+        },
+        {
+            "name": "sound settings block construction underneath the panel",
+            "detail": "A valid empty residential site stayed unchanged while the sound modal was open.",
+            "passed": true
+        },
+        {
+            "name": "listener captured a chronological unclipped gameplay preview",
+            "detail": "12.00s; 2 channels; 48000Hz; RMS=0.058016; peak=0.422362.",
+            "passed": true
+        },
+        {
+            "name": "mute silences actual listener output",
+            "detail": "RMS=0.000000; peak=0.000000; 42 output windows over 0.35s.",
+            "passed": true
+        },
+        {
+            "name": "unmute restores actual audio output",
+            "detail": "RMS=0.044499; peak=0.127387; 42 output windows over 0.35s.",
+            "passed": true
+        },
+        {
+            "name": "music ambience and effect levels reach silence independently of mute",
+            "detail": "RMS=0.000000; peak=0.000000; 42 output windows over 0.35s.",
+            "passed": true
+        },
+        {
+            "name": "music bus produces audible background soundtrack",
+            "detail": "RMS=0.038405; peak=0.107959; 49 output windows over 0.41s.",
+            "passed": true
+        },
+        {
+            "name": "natural ambience continues while the city is paused",
+            "detail": "RMS=0.019128; peak=0.075041; 60 output windows over 0.50s.",
+            "passed": true
+        },
+        {
+            "name": "night crossfades birds into nocturnal ambience",
+            "detail": "Bird gain 0.306 to 0.007; night gain 0.000 to 0.349.",
+            "passed": true
+        },
+        {
+            "name": "3x simulation speed does not pitch-shift music or ambience",
+            "detail": "5 loops retain pitch 1; every source keeps its previous pitch. Per-effect artistic pitch variation is independent of simulation speed.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Ui",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.026808; peak=0.123565; 55 output windows over 0.46s.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Road",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.057556; peak=0.343206; 55 output windows over 0.46s.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Zone",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.040324; peak=0.158846; 55 output windows over 0.46s.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Facility",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.064538; peak=0.192628; 54 output windows over 0.45s.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Bulldoze",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.072316; peak=0.331269; 55 output windows over 0.46s.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Denied",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.049364; peak=0.140906; 55 output windows over 0.46s.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Milestone",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.093739; peak=0.270299; 55 output windows over 0.46s.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Save",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.064045; peak=0.154603; 54 output windows over 0.45s.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Load",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.061527; peak=0.191638; 54 output windows over 0.45s.",
+            "passed": true
+        },
+        {
+            "name": "effect playback reaches listener: Grow",
+            "detail": "Direct sound-dispatch smoke test; RMS=0.041594; peak=0.102030; 54 output windows over 0.45s.",
+            "passed": true
+        },
+        {
+            "name": "rapid repeated effects are throttled",
+            "detail": "Two zone cue requests in one frame produce one voice.",
+            "passed": true
+        },
+        {
+            "name": "audio source allocation remains bounded",
+            "detail": "13 sources after gameplay and all cues; expected five loops plus an eight-voice pool.",
+            "passed": true
+        },
+        {
+            "name": "test leaves seeded city intact and uses an isolated save",
+            "detail": "Restored the full initial city JSON; the test save stays inside Artifacts and audio preference persistence is disabled by -audioTest.",
+            "passed": true
+        },
+        {
+            "name": "no runtime errors, exceptions or assertions",
+            "detail": "0 errors; 0 warnings.",
+            "passed": true
+        }
+    ],
+    "measurements": [
+        {
+            "name": "default soundtrack and coastal ambience",
+            "windows": 85,
+            "rms": 0.04152241721749306,
+            "peak": 0.14740018546581268,
+            "durationSeconds": 0.7075557708740234
+        },
+        {
+            "name": "muted master output",
+            "windows": 42,
+            "rms": 0.0,
+            "peak": 0.0,
+            "durationSeconds": 0.3505525588989258
+        },
+        {
+            "name": "unmuted master output",
+            "windows": 42,
+            "rms": 0.044499147683382034,
+            "peak": 0.12738709151744843,
+            "durationSeconds": 0.35079383850097656
+        },
+        {
+            "name": "all three buses at zero",
+            "windows": 42,
+            "rms": 0.0,
+            "peak": 0.0,
+            "durationSeconds": 0.35029029846191406
+        },
+        {
+            "name": "music only",
+            "windows": 49,
+            "rms": 0.03840499743819237,
+            "peak": 0.10795849561691284,
+            "durationSeconds": 0.4083232879638672
+        },
+        {
+            "name": "paused daytime ambience only",
+            "windows": 60,
+            "rms": 0.01912792958319187,
+            "peak": 0.07504123449325562,
+            "durationSeconds": 0.5000152587890625
+        },
+        {
+            "name": "isolated effect Ui",
+            "windows": 55,
+            "rms": 0.02680768258869648,
+            "peak": 0.12356479465961456,
+            "durationSeconds": 0.4582691192626953
+        },
+        {
+            "name": "isolated effect Road",
+            "windows": 55,
+            "rms": 0.05755578726530075,
+            "peak": 0.34320637583732605,
+            "durationSeconds": 0.45828819274902344
+        },
+        {
+            "name": "isolated effect Zone",
+            "windows": 55,
+            "rms": 0.04032440856099129,
+            "peak": 0.1588456630706787,
+            "durationSeconds": 0.45831298828125
+        },
+        {
+            "name": "isolated effect Facility",
+            "windows": 54,
+            "rms": 0.06453821063041687,
+            "peak": 0.1926281452178955,
+            "durationSeconds": 0.4500236511230469
+        },
+        {
+            "name": "isolated effect Bulldoze",
+            "windows": 55,
+            "rms": 0.07231640815734863,
+            "peak": 0.3312690258026123,
+            "durationSeconds": 0.45831871032714844
+        },
+        {
+            "name": "isolated effect Denied",
+            "windows": 55,
+            "rms": 0.0493643619120121,
+            "peak": 0.14090576767921448,
+            "durationSeconds": 0.4583320617675781
+        },
+        {
+            "name": "isolated effect Milestone",
+            "windows": 55,
+            "rms": 0.09373936057090759,
+            "peak": 0.27029845118522644,
+            "durationSeconds": 0.4582958221435547
+        },
+        {
+            "name": "isolated effect Save",
+            "windows": 54,
+            "rms": 0.06404546648263931,
+            "peak": 0.1546027511358261,
+            "durationSeconds": 0.45000267028808594
+        },
+        {
+            "name": "isolated effect Load",
+            "windows": 54,
+            "rms": 0.06152725592255592,
+            "peak": 0.1916380524635315,
+            "durationSeconds": 0.4500255584716797
+        },
+        {
+            "name": "isolated effect Grow",
+            "windows": 54,
+            "rms": 0.04159379005432129,
+            "peak": 0.10203021764755249,
+            "durationSeconds": 0.4500579833984375
+        }
+    ],
+    "runtimeErrors": []
+}
