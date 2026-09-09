@@ -2,6 +2,8 @@
 
 **A playable Unity demo built with Codex and GPT-6 Astra.** Start with a tiny settlement, draw streets, grow neighborhoods, balance services and jobs, and unlock a modern skyline and stadium.
 
+**One broad starting prompt; autonomous implementation.** The owner asked for a scoped Cities: Skylines-inspired demo and delegated design, programming, art, testing and agent coordination to Codex. The agents planned and executed the work without a step-by-step implementation recipe. Later messages provided playtest feedback and requested additions such as audio and the trailer; each was carried through by the agents. The trailer itself was also produced from a single creative brief.
+
 ![Seabright's grown city](Documentation/Images/skyline.png)
 
 [Watch the 54-second gameplay trailer](Media/Trailer/Seabright-trailer.mp4) · [Trailer review](Documentation/REVIEW.md#gameplay-trailer)
@@ -103,7 +105,7 @@ At the published **standard GPT-6 Astra API rates** checked on 9 September 2026,
 
 ## Key prompts from the project owner
 
-The prompts below are the project brief and the feedback that changed the build. They preserve the owner's original wording; the quoted initial brief and publication request are excerpts. Automatic continuation instructions and assistant-generated agent assignments are excluded.
+The first prompt below launched autonomous development. The subsequent prompts record product feedback, environment preferences and additional deliverables, rather than step-by-step implementation instructions. They preserve the owner's original wording; the quoted initial brief and publication request are excerpts. Automatic continuation instructions and assistant-generated agent assignments are excluded.
 
 <details>
 <summary>1. Initial brief — test autonomous simulation-game development</summary>
