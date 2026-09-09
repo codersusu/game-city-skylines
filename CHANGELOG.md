@@ -2,6 +2,14 @@
 
 Versions describe delivered development stages. They were created locally before the first repository commit; these entries do not imply earlier Git tags or published releases.
 
+## Gameplay trailer — 2026-09-09
+
+- Created an original transparent sea-and-skyline emblem and clean, enlarged opening/closing title cards.
+- Produced a 54-second 1080p/30 fps gameplay trailer covering construction, earned growth, towers, a stadium, street activity and night lighting.
+- Captured a separate affordable 24-to-793-resident playthrough through the existing simulation, with an explicit timelapse label and recorded population/day counters.
+- Mixed the game's own music, ambience and timestamped effects into a stereo trailer soundtrack.
+- Added repeatable Unity capture and FFmpeg composition tools, with capture/edit evidence. Normal gameplay remains version 0.2.1.
+
 ## Documentation and repository publication — 2026-09-09
 
 - Consolidated the overview and owner prompts in README, with separate game design, implementation/status, changelog and review documents.

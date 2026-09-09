@@ -1,0 +1,352 @@
+{
+  "output": "Media/Trailer/Seabright-trailer.mp4",
+  "poster": "Media/Trailer/title-intro.png",
+  "duration_seconds": 54.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "encoding": "H.264 CRF 18 / yuv420p, AAC 192 kbps / 48 kHz stereo, faststart",
+  "font": "/System/Library/Fonts/Avenir Next.ttc",
+  "emblem": "Media/Brand/Seabright-emblem.png",
+  "source_gameplay": "Artifacts/Trailer/gameplay.mp4",
+  "gameplay_duration_seconds": 46.0,
+  "population_counter": "Recorded simulation samples, shown without interpolating population",
+  "title_seconds": 3,
+  "closing_seconds": 5,
+  "chapters": [
+    {
+      "trailer_start": 3.0,
+      "trailer_end": 10.0,
+      "title": "SMALL BEGINNINGS"
+    },
+    {
+      "trailer_start": 10.0,
+      "trailer_end": 27.0,
+      "title": "ROOM TO GROW"
+    },
+    {
+      "trailer_start": 27.0,
+      "trailer_end": 35.0,
+      "title": "A SKYLINE OF YOUR OWN"
+    },
+    {
+      "trailer_start": 35.0,
+      "trailer_end": 42.0,
+      "title": "MAKE ROOM FOR SOMETHING BIG"
+    },
+    {
+      "trailer_start": 42.0,
+      "trailer_end": 49.0,
+      "title": "A CITY THAT LIVES"
+    }
+  ],
+  "audio": {
+    "source": "Seabright's original in-game WAV assets, mixed for the trailer; no external stock audio",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_seconds": 54.0,
+    "rms_dbfs": -19.46,
+    "sample_peak_dbfs": -1.5,
+    "clipped_samples": 0,
+    "integrated_lufs": "-17.35",
+    "true_peak_dbtp": "-1.50",
+    "events_note": "Captured gameplay event times offset by the 3-second title.",
+    "events_applied": [
+      {
+        "time": 4.5,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 4.799999952316284,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 5.099999904632568,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 5.400000095367432,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 5.700000047683716,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 6.299999952316284,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 7.0,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 7.699999809265137,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 10.0,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 10.400000095367432,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 10.800000190734863,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 11.199999809265137,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 11.600000381469727,
+        "cue": "road_build",
+        "volume": 1.0
+      },
+      {
+        "time": 11.899999618530273,
+        "cue": "facility_build",
+        "volume": 1.0
+      },
+      {
+        "time": 12.100000381469727,
+        "cue": "facility_build",
+        "volume": 1.0
+      },
+      {
+        "time": 12.300000190734863,
+        "cue": "facility_build",
+        "volume": 1.0
+      },
+      {
+        "time": 12.5,
+        "cue": "facility_build",
+        "volume": 1.0
+      },
+      {
+        "time": 12.699999809265137,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 12.933333396911621,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 13.166666984558105,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 14.433333396911621,
+        "cue": "milestone",
+        "volume": 1.0
+      },
+      {
+        "time": 14.533333778381348,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 14.800000190734863,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.366666793823242,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.566666603088379,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.766666412353516,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 17.100000381469727,
+        "cue": "milestone",
+        "volume": 1.0
+      },
+      {
+        "time": 17.233333587646484,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 17.43333339691162,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 17.800000190734863,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 18.06666660308838,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 20.0,
+        "cue": "milestone",
+        "volume": 1.0
+      },
+      {
+        "time": 36.0,
+        "cue": "facility_build",
+        "volume": 1.0
+      },
+      {
+        "time": 42.0,
+        "cue": "ui_click",
+        "volume": 1.0
+      }
+    ],
+    "events_skipped": [
+      {
+        "time": 12.766666412353516,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 12.833333015441895,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 12.866666793823242,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 13.0,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 13.033333778381348,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 13.100000381469727,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 13.199999809265137,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 13.266666412353516,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 13.333333015441895,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 14.633333206176758,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 14.833333015441895,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 14.899999618530273,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 14.933333396911621,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 14.966666221618652,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.433333396911621,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.466666221618652,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.5,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.600000381469727,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.633333206176758,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.699999809265137,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.733333587646484,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.833333015441895,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 15.866666793823242,
+        "cue": "zone_paint",
+        "volume": 1.0
+      },
+      {
+        "time": 17.600000381469727,
+        "cue": "zone_paint",
+        "volume": 1.0
+      }
+    ],
+    "music_ducking": "24% reduction during cues, 60 ms attack / 600 ms release"
+  }
+}

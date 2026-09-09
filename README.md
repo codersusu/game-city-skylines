@@ -4,6 +4,8 @@
 
 ![Seabright's grown city](Documentation/Images/skyline.png)
 
+[Watch the 54-second gameplay trailer](Media/Trailer/Seabright-trailer.mp4) · [Trailer review](Documentation/REVIEW.md#gameplay-trailer)
+
 ## Purpose and scope
 
 This project tests AI's ability to develop a simulation game end to end: game design, reusable and original art, programming, sound, autonomous playtesting, and revision after human feedback. Cities: Skylines provides the planning reference. Seabright is an original, compact interpretation with its own code, interface, landmarks and music, plus licensed reusable assets.
@@ -75,7 +77,7 @@ Verification combined deterministic simulation checks, autonomous construction t
 
 ## Development time and cost
 
-These figures cover development **through the completed 0.2.1 audio delivery on 9 September 2026**, before this documentation and GitHub publication task. They are reconstructed from retained local session records, not estimates based on code size.
+These figures cover development **through the completed 0.2.1 audio delivery on 9 September 2026**, before documentation, GitHub publication and trailer production. They are reconstructed from retained local session records, not estimates based on code size.
 
 | Measure | Recorded result |
 |---|---:|
@@ -164,5 +166,14 @@ The rest of the brief offered up to five subagents plus a lead developer, confir
 > Oh no, put the prompts in the overview doc.
 
 The complete request also asked for a game design doc, implementation/status/next steps, changelog, overview, and screenshots on a review page. This documentation structure follows that request.
+
+</details>
+
+<details>
+<summary>7. Create a gameplay trailer and original emblem</summary>
+
+> Can you make a Steam-style trailer for this game? So you have, like, three seconds, like, enlarged title of the game with icons, and make it kind of, like, no background, so focusing on the titles. And then you show the gameplay with audio, show different features of the game, and also show a city, like, grown from scratch to a metro city, and then finish with another, like, enlarged, like, title icon page. Around one minute in total, like half a minute to one minute. I think if you don't have, you should also create a beautiful icon, which fits to the background of this game. Yeah.
+
+The resulting 54-second trailer shows the actual demo's small-settlement-to-tower progression, with accelerated growth identified on screen. It uses a new original sea-and-skyline emblem and the game's own music, ambience and effects.
 
 </details>

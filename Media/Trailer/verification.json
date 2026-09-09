@@ -1,0 +1,25 @@
+{
+  "decodedFullVideoAndAudio": true,
+  "decoderErrors": "",
+  "reviewFrameTimes": [
+    1.5,
+    5,
+    12,
+    16,
+    23,
+    29,
+    37,
+    41,
+    46,
+    51
+  ],
+  "sha256": "9f4b4cca8c9ef3b3f4ba3ed54b23a0491bcf81e68d3e1bb44deb0b0db41b4118",
+  "bytes": 40650127,
+  "finalAacMeasurements": {
+    "input_i": "-17.36",
+    "input_tp": "-1.51",
+    "input_lra": "4.00"
+  },
+  "visualReview": "Opening/closing and eight gameplay checkpoints inspected for orientation, framing and caption/counter readability.",
+  "passed": true
+}

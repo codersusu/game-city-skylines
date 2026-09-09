@@ -4,6 +4,16 @@
 
 Seabright now supports a coherent journey from a small coastal settlement to an operating district with towers and a stadium. The strongest result is the integrated growth loop: purchases, services, employment, occupancy and budget consequences work together. The presentation and sound make that state readable. Its remaining gaps are those of a compact stylized prototype: sparse world composition, repeated assets, simple street behavior and limited service depth.
 
+## Gameplay trailer
+
+[![Watch the Seabright gameplay trailer](../Media/Trailer/title-intro.png)](../Media/Trailer/Seabright-trailer.mp4)
+
+**[Watch or download the 54-second trailer](../Media/Trailer/Seabright-trailer.mp4)** — 1920 × 1080, 30 fps, H.264 video with stereo AAC audio. The first three seconds and final five seconds show the new emblem and enlarged title on plain midnight teal. Between them: road and zone construction, a growth timelapse with recorded population/day counts, modern towers, a stadium opening, street traffic and a night view.
+
+The footage is a fresh Unity Play-mode camera capture. Construction uses the game's validated `Build`/`BuildRoad` methods; growth uses ordinary `Tick` steps with waiting compressed. This separate trailer journey reaches **24 → 793 residents**, with a minimum treasury of **$11,051**, and earns all three unlocks. No population, money, building levels or skyline save is injected. The interface is hidden for composition. The soundtrack mixes the game's original music, coast/town/nature loops and timestamped construction/milestone effects; it is an edited trailer mix, rather than a live microphone recording.
+
+The [transparent emblem](../Media/Brand/Seabright-emblem.png) is original generated branding; its [prompt and provenance](../Media/Brand/emblem-prompt.txt) are retained. Gameplay images are unpainted engine renders. [Capture evidence](../Media/Trailer/capture-report.json) and [edit/audio measurements](../Media/Trailer/trailer-metadata.json) accompany the video. Reproduction commands are in [Implementation](IMPLEMENTATION.md#trailer-production).
+
 ## Start small
 
 ![The starter settlement, with its entry street and six buildings](Images/starter.png)

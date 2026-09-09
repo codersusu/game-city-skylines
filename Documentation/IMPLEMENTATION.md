@@ -84,6 +84,22 @@ The 0.2.1 listener recording is 12 seconds of stereo 48 kHz PCM, with RMS 0.0580
 - **Liberation Sans:** the interface font retains its SIL Open Font License. The full text and third-party material notices are included in [StreamingAssets notices](../Assets/StreamingAssets/THIRD_PARTY_NOTICES.txt), which are bundled with the app.
 - **Original project work:** procedural architecture/details, shaders, interface and audio source generation. Audio uses no external samples or downloaded songs; [source metrics](../Assets/Resources/Audio/audio_metrics.json) accompany the generator and WAV files. No Mesh AI key or credits were used.
 
+## Trailer production
+
+The 54-second trailer consists of a three-second opening card, 46 seconds of actual engine-rendered gameplay, and a five-second closing card. `Assets/Editor/TrailerCaptureTasks.cs` captures 1,380 gameplay frames at 1920 × 1080 with fixed camera/traffic motion. It starts a fresh supplied settlement, schedules purchases through normal simulation validation, compresses growth waiting, and records events and one-second population/day samples. User saves and sound preferences are not written. The full recording reaches 793 residents and an operating stadium; this is footage generation with construction assertions, not a replacement for the standalone acceptance reports above.
+
+Use Unity 6000.6.0f1, FFmpeg with libx264, and Python with NumPy/Pillow:
+
+```sh
+export SEABRIGHT_FFMPEG="/absolute/path/to/ffmpeg"
+bash Tools/capture-trailer.sh
+python3 Tools/compose_trailer.py --ffmpeg "$SEABRIGHT_FFMPEG"
+```
+
+`-trailerPreview` on the capture command creates one-second storyboard images without encoding the full video. `--titles-only` on the composer regenerates the title/caption art. Intermediate recordings, audio masters and logs live in ignored `Artifacts/Trailer/`; the delivered MP4, original branding and selected metadata live in `Media/`. The macOS title rendering uses the installed Avenir Next font; no font binary is redistributed. Pass `--font /path/to/font.ttf` on another system.
+
+The composer uses the game's original WAVs, crossfades music loops, blends day/night ambience, aligns effects to recorded construction events and reduces repeated cues during the timelapse. It targets -17 LUFS with headroom and reports measured audio levels. The master uses H.264/yuv420p, AAC 192 kbps/48 kHz stereo and MP4 faststart. Captions and title art are editorial additions; the city footage uses normal game shaders and camera image effects. The new emblem was generated with the built-in image tool; no Mesh AI key was used.
+
 ## Prioritized next steps
 
 1. **Refine ordinary play with observed user sessions.** Exercise the new-city decision, failed-save path, budget and sound sliders, tool switching and camera at common window scales. Resolve the Retina automation coordinate mismatch before treating native GUI automation as coverage; add tests only for changed or failing behavior.

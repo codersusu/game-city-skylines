@@ -22,8 +22,8 @@ assert runtime['passed'] and simulation['passed'] and build['errors'] == 0
 assert audio['completedUtc'] > build['recordedAtUtc']
 subprocess.run(['/usr/bin/ditto', '-c', '-k', '--sequesterRsrc', '--keepParent', str(builds / 'Seabright.app'), str(builds / 'Seabright-macOS.zip')], check=True)
 files = []
-for directory in ['Assets', 'Packages', 'ProjectSettings', 'Tools', 'Documentation']:
-    files.extend(p for p in (root / directory).rglob('*') if p.is_file() and p.name != '.DS_Store' and '__pycache__' not in p.parts and p.suffix not in ('.pyc', '.log'))
+for directory in ['Assets', 'Packages', 'ProjectSettings', 'Tools', 'Documentation', 'Media']:
+    files.extend(p for p in (root / directory).rglob('*') if p.is_file() and p.name not in ('.DS_Store', 'population-counter.mov') and '__pycache__' not in p.parts and p.suffix not in ('.pyc', '.log'))
 for name in ['README.md', 'CHANGELOG.md', 'Play Seabright.command', '.gitignore', 'Artifacts/simulation-acceptance.json', 'Artifacts/runtime-playtest.json', 'Artifacts/build-result.json', 'Artifacts/grown-city-save.json', 'Artifacts/audio-playtest.json', 'Artifacts/audio-preview.wav', 'Artifacts/development-metrics.json']:
     files.append(root / name)
 for name in runtime['screenshots'] + ['04-visible-vehicles.png', '05-visible-pedestrians.png', '14-sound-settings.png']:

@@ -1,0 +1,16 @@
+{
+    "recordedAtUtc": "2026-09-09T10:27:36.6812480Z",
+    "unityVersion": "6000.6.0f1",
+    "method": "Unity Play mode camera rendering, fixed 30fps traffic/camera motion; original CitySimulation.Build/BuildRoad/Tick. Starts with 24 residents and $30000. Growth waiting compressed; no population, funds, levels, unlocks or skyline injected. Interface hidden. Audio mixed later from original game assets with timestamped construction events. No user save or preferences written.",
+    "error": "",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "population": 793,
+    "day": 49,
+    "duration": 46.0,
+    "treasury": 23900.0859375,
+    "lowestTreasury": 11050.9287109375,
+    "preview": false,
+    "passed": true
+}

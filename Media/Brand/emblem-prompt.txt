@@ -1,0 +1,17 @@
+Asset: Seabright-emblem.png
+Mode: Built-in image_gen (not CLI/API)
+Created: 2026-09-09
+Provenance: Original AI-generated brand emblem for the Seabright game trailer.
+Source: Built-in image generation output; original retained locally.
+No existing game logos or image references were supplied to the generation call.
+
+Exact generation prompt:
+Use case: logo-brand
+Asset type: Seabright coastal city-builder game emblem for a premium launch trailer title card, square raster PNG with genuine alpha transparency.
+Primary request: Create a beautiful original emblem: a compact silhouette of three elegant contemporary towers rising above two graceful curved sea waves and a harbor curve, with a small warm sun. A thin tasteful circular medallion frame may unify the composition.
+Scene/backdrop: Completely transparent background; empty areas between the emblem parts must also be transparent. This will be placed on a plain midnight teal title screen.
+Style/medium: Sophisticated simplified architectural brand mark with a restrained dimensional bevel and subtle material detail. Crisp sculpted edges, calm coastal character. Designed to remain legible at 256 px. Attractive professionally finished game key art emblem, not an elaborate illustration.
+Composition/framing: Single centered emblem, balanced roughly circular silhouette, generous transparent margin. No typography anywhere.
+Color palette: Deep ocean teal and sea-glass mint architecture, warm ivory edge highlights, muted brushed-gold sun and fine frame. Strong readability against dark teal.
+Materials/textures: Very subtle brushed metal highlights on trim and understated glass faces on towers, broad clean planes rather than tiny detail.
+Constraints: Original design only. No letters, words, numbers, watermarks, Steam symbols, or copied Cities: Skylines logos. No landscape scene, no ground plane, no drop-shadow rectangle, no background color, no checkerboard printed into the pixels. Deliver actual alpha transparency.

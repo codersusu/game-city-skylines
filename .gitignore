@@ -18,6 +18,7 @@ env
 *.log
 *.pyc
 __pycache__/
+/Media/Trailer/population-counter.mov
 .codex/
 .agents/
 
