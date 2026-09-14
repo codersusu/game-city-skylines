@@ -110,6 +110,40 @@ namespace Seabright.Editor
             Debug.Log("Seabright standalone built: " + Path.GetFullPath("Builds/Seabright.app"));
         }
 
+        [MenuItem("Seabright/Build Web")]
+        public static void BuildWeb()
+        {
+            PrepareScene(); PrepareShaderReferences();
+            Directory.CreateDirectory("Artifacts");
+            PlayerSettings.companyName = "Seabright Studio";
+            PlayerSettings.productName = "Seabright";
+            PlayerSettings.bundleVersion = "0.2.1";
+            PlayerSettings.defaultScreenWidth = 1600;
+            PlayerSettings.defaultScreenHeight = 1000;
+            PlayerSettings.colorSpace = ColorSpace.Linear;
+            PlayerSettings.WebGL.template = "PROJECT:Seabright";
+            // GitHub Pages cannot configure Content-Encoding per file; the loader handles gzip.
+            PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Gzip;
+            PlayerSettings.WebGL.decompressionFallback = true;
+            PlayerSettings.WebGL.dataCaching = true;
+            PlayerSettings.WebGL.exceptionSupport = WebGLExceptionSupport.ExplicitlyThrownExceptionsOnly;
+            PlayerSettings.SetScriptingBackend(UnityEditor.Build.NamedBuildTarget.WebGL, ScriptingImplementation.IL2CPP);
+            var build = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
+                scenes = new[] { ScenePath }, locationPathName = "Builds/WebGL", target = BuildTarget.WebGL, options = BuildOptions.None
+            });
+            var summary = build.summary;
+            File.WriteAllText("Artifacts/web-build-result.json", JsonUtility.ToJson(new BuildResultRecord {
+                recordedAtUtc = DateTime.UtcNow.ToString("o"), unityVersion = Application.unityVersion,
+                result = summary.result.ToString(), outputPath = summary.outputPath,
+                errors = (int)summary.totalErrors, warnings = (int)summary.totalWarnings,
+                bytes = (long)summary.totalSize, seconds = summary.totalTime.TotalSeconds
+            }, true));
+            if (summary.result != BuildResult.Succeeded || summary.totalErrors > 0)
+                throw new InvalidOperationException("Web build failed: " + summary.result);
+            File.WriteAllText("Builds/WebGL/.nojekyll", "");
+            Debug.Log("SEABRIGHT_WEB_BUILD_COMPLETE Builds/WebGL");
+        }
+
         [MenuItem("Seabright/Prepare Starter Scene")]
         public static void PrepareScene()
         {

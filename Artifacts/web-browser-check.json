@@ -1,0 +1,59 @@
+{
+  "recordedAtUtc": "2026-09-14T18:08:16.333208+00:00",
+  "platform": "Codex in-app desktop browser on macOS",
+  "viewport": [
+    1280,
+    720
+  ],
+  "passed": true,
+  "scope": "Real browser keyboard, pointer and drag through computer use. A focused starter smoke check; not a repeat of the full native growth acceptance journey. Browser audio measured through an isolated local QA wrapper observing Web Audio output, not subjective speaker listening. QA wrapper is excluded from public builds.",
+  "checks": [
+    {
+      "name": "loads and renders",
+      "passed": true,
+      "detail": "Unity loaded through gzip fallback; terrain, buildings, icons and cars visible."
+    },
+    {
+      "name": "road and zone input",
+      "passed": true,
+      "detail": "Extended the entry road using a browser drag; placed home, shop and industrial zoning with browser input."
+    },
+    {
+      "name": "development",
+      "passed": true,
+      "detail": "Sites became distinct buildings, and population reached 44."
+    },
+    {
+      "name": "save reload persistence",
+      "passed": true,
+      "detail": "Saved at day12/population44/treasury29116, reloaded the page, loaded through HUD; exact displayed values and built road/buildings restored."
+    },
+    {
+      "name": "audio signal and mute",
+      "passed": true,
+      "detail": "Local QA AnalyserNode observed Web Audio destination: running RMS0.05504293/peak0.14443481; mute RMS0/peak0; unmute RMS0.04125895/peak0.11119703."
+    },
+    {
+      "name": "night rendering",
+      "passed": true,
+      "detail": "Day/night toggle changed lighting and lit windows; no missing/pink shaders observed."
+    },
+    {
+      "name": "fullscreen",
+      "passed": true,
+      "detail": "HTML full-screen control resized the actual canvas and HUD successfully."
+    },
+    {
+      "name": "runtime console",
+      "passed": true,
+      "detail": "No warning/error entries returned by browser developer log during the local checks."
+    }
+  ],
+  "publicDeployment": {
+    "url": "https://codersusu.github.io/game-city-skylines/",
+    "githubPagesStatus": "built",
+    "deploymentCommit": "10c7da186bc81874334d0cfdbb0d4af1c9748c8c",
+    "liveBrowserVerified": false,
+    "limitation": "Automatic approval review denied final live-browser navigation because the account usage limit was reached. Local browser checks passed; GitHub Pages API reports successful deployment."
+  }
+}

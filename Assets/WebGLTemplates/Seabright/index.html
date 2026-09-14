@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Play Seabright — A City in Balance</title>
+  <meta name="description" content="Build a coastal city, grow neighborhoods and unlock a skyline. Play the Seabright Unity demo in your desktop browser.">
+  <link rel="icon" href="emblem.png">
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,sans-serif;color:#f2eee0;background:#071e25}
+    [hidden]{display:none!important}*{box-sizing:border-box}body{margin:0}main{height:100dvh;display:flex;flex-direction:column}
+    header{display:flex;align-items:center;gap:20px;padding:10px 22px;border-bottom:1px solid #ffffff18;min-height:52px}
+    header strong{letter-spacing:.2em;font-size:15px}nav{margin-left:auto;display:flex;gap:18px;align-items:center}
+    a{color:#a6d8cb;text-decoration:none;font-size:13px}a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:1px solid #a6d8cb55;border-radius:6px;padding:8px 16px;background:#183e43;color:#f2eee0}
+    button:hover{background:#26575a}button:focus-visible,a:focus-visible{outline:3px solid #ccB175;outline-offset:4px}
+    #stage{position:relative;flex:1;min-height:0;display:flex;justify-content:center;align-items:center;overflow:hidden}
+    canvas{width:100%;height:100%;display:block;outline:0;background:#071e25}
+    #cover{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;background:#071e25;z-index:2;padding:24px}
+    #cover[hidden]{display:none}.intro{max-width:620px}.intro img{width:180px;height:180px;object-fit:contain}
+    h1{font-size:clamp(34px,5vw,62px);letter-spacing:.18em;margin:20px 0 10px}p{color:#a6d8cb;line-height:1.65}
+    .tagline{letter-spacing:.24em;text-transform:uppercase;font-size:12px;margin-bottom:28px}
+    #start{padding:14px 34px;font-weight:650;background:#a6d8cb;color:#071e25;border:0;min-width:210px}
+    #start:disabled{opacity:.65;cursor:progress}progress{display:block;margin:20px auto;width:260px;height:5px;accent-color:#a6d8cb}
+    #status{font-size:13px;min-height:22px;white-space:pre-wrap}footer{font-size:12px;color:#a6d8cb;padding:9px 18px;text-align:center;border-top:1px solid #ffffff18}
+    @media(max-width:700px){header{padding:8px 12px;gap:8px}nav{gap:10px}header strong{font-size:12px}footer{font-size:10px}.intro img{width:120px;height:120px}}
+  </style>
+</head>
+<body><main>
+  <header><strong>SEABRIGHT</strong><nav><a href="https://github.com/codersusu/game-city-skylines/releases/latest">Download Mac / Web</a><a href="https://github.com/codersusu/game-city-skylines#your-first-neighborhood">How to play</a><button id="fullscreen" type="button">Full screen</button></nav></header>
+  <div id="stage">
+    <canvas id="unity-canvas" width="1600" height="1000" tabindex="0" aria-label="Seabright city building game"></canvas>
+    <div id="cover"><div class="intro">
+      <img src="emblem.png" alt="Seabright coastal skyline emblem"><h1>SEABRIGHT</h1><p class="tagline">A city in balance</p>
+      <p>Start small. Shape your streets.<br>Grow your own coastal skyline.</p>
+      <button id="start" type="button">Load game</button><progress id="progress" max="1" value="0" hidden></progress>
+      <div id="status" role="status" aria-live="polite">Desktop keyboard and mouse recommended. Sound starts after entering.</div>
+      <p style="font-size:12px">Save in the game toolbar. Your city stays in this browser.<br>Clearing site data removes browser saves.</p>
+    </div></div>
+  </div>
+  <footer>WASD move · Q/E orbit · Scroll zoom · 1 roads · 2 homes · 3 shops · 4 industry · Space pause · Use in-game Save / Load</footer>
+</main>
+<script src="Build/{{{ LOADER_FILENAME }}}"></script>
+<script>
+  const canvas=document.getElementById('unity-canvas'),start=document.getElementById('start'),status=document.getElementById('status'),progress=document.getElementById('progress');
+  let game=null;
+  document.getElementById('fullscreen').addEventListener('click',()=>{if(game){game.SetFullscreen(1);canvas.focus();}});
+  start.addEventListener('click',async()=>{
+    if(game){document.getElementById('cover').hidden=true;canvas.focus();return;}
+    start.disabled=true;start.textContent='Loading your coast…';progress.hidden=false;status.textContent='Downloading the game. The first visit takes a little longer.';
+    try{
+      game=await createUnityInstance(canvas,{
+        arguments:[],
+#if PROGRESSIVE_ASSET_LOADING
+        primaryDataUrls: {{{ JSON.stringify(PRIMARY_DATA_FILES) }}},
+        secondaryDataUrls: {{{ JSON.stringify(SECONDARY_DATA_FILES) }}},
+#else
+        dataUrl:'Build/{{{ DATA_FILENAME }}}',
+#endif
+        frameworkUrl:'Build/{{{ FRAMEWORK_FILENAME }}}',
+#if USE_WASM
+        codeUrl:'Build/{{{ CODE_FILENAME }}}',
+#endif
+        streamingAssetsUrl:'StreamingAssets',
+        companyName:{{{ JSON.stringify(COMPANY_NAME) }}},productName:{{{ JSON.stringify(PRODUCT_NAME) }}},productVersion:{{{ JSON.stringify(PRODUCT_VERSION) }}},
+        autoSyncPersistentDataPath:true,devicePixelRatio:1,
+        showBanner:(message,type)=>{if(type==='error'){status.textContent=message;document.getElementById('cover').hidden=false;}}
+      },value=>{progress.value=value;});
+      progress.hidden=true;start.disabled=false;start.textContent='Enter Seabright';status.textContent='Your city is ready. Click to enter and enable sound.';
+    }catch(error){status.textContent='The game could not start. Reload to try again. '+String(error);start.textContent='Unable to load';console.error(error);}
+  });
+  canvas.addEventListener('keydown',event=>{if(['Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','F5','F9'].includes(event.code))event.preventDefault();});
+</script></body></html>

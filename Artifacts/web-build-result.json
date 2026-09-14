@@ -1,0 +1,11 @@
+{
+  "recordedAtUtc": "2026-09-14T18:03:21.1514850Z",
+  "unityVersion": "6000.6.0f1",
+  "result": "Succeeded",
+  "outputPath": "Builds/WebGL",
+  "errors": 0,
+  "warnings": 0,
+  "bytes": 20572811,
+  "seconds": 32.720386,
+  "compilerNotes": "Unity BuildReport reports zero warnings; raw Emscripten output contains upstream WebGPU/Firefox compatibility and deprecated JS-symbol notices."
+}

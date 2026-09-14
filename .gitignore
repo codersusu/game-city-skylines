@@ -28,6 +28,9 @@ __pycache__/
 !/Artifacts/runtime-playtest.json
 !/Artifacts/audio-playtest.json
 !/Artifacts/build-result.json
+!/Artifacts/web-build-result.json
+!/Artifacts/web-browser-check.json
+!/Artifacts/release-manifest.json
 !/Artifacts/development-metrics.json
 !/Artifacts/grown-city-save.json
 !/Artifacts/audio-preview.wav

@@ -2,6 +2,8 @@
 
 **Version 0.2.1 · reviewed 9 September 2026**
 
+**Playable downloads added 14 September:** [Play in a desktop browser](https://codersusu.github.io/game-city-skylines/) or [download the Mac/Web builds](https://github.com/codersusu/game-city-skylines/releases/tag/v0.2.1). The new web port passed focused browser checks for construction, first development, reload persistence, audio/mute, night and full-screen rendering. [Browser evidence](../Artifacts/web-browser-check.json). The original screenshots and native acceptance evidence below retain their original dates.
+
 Seabright now supports a coherent journey from a small coastal settlement to an operating district with towers and a stadium. The strongest result is the integrated growth loop: purchases, services, employment, occupancy and budget consequences work together. The presentation and sound make that state readable. Its remaining gaps are those of a compact stylized prototype: sparse world composition, repeated assets, simple street behavior and limited service depth.
 
 ## Gameplay trailer

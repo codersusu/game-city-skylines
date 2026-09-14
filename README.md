@@ -8,6 +8,8 @@
 
 [Watch the 54-second gameplay trailer](Media/Trailer/Seabright-trailer.mp4) · [Trailer review](Documentation/REVIEW.md#gameplay-trailer)
 
+**[Play in your browser](https://codersusu.github.io/game-city-skylines/)** · **[Download Mac (Apple Silicon)](https://github.com/codersusu/game-city-skylines/releases/download/v0.2.1/Seabright-macOS-AppleSilicon.zip)** · **[Download WebGL ZIP](https://github.com/codersusu/game-city-skylines/releases/download/v0.2.1/Seabright-WebGL.zip)**
+
 ## Purpose and scope
 
 This project tests AI's ability to develop a simulation game end to end: game design, reusable and original art, programming, sound, autonomous playtesting, and revision after human feedback. Cities: Skylines provides the planning reference. Seabright is an original, compact interpretation with its own code, interface, landmarks and music, plus licensed reusable assets.
@@ -35,6 +37,10 @@ The delivered **0.2.1** demo has a fixed 48 × 48 coastal map, aggregate populat
 
 ## Play and build
 
+Play the [web version](https://codersusu.github.io/game-city-skylines/) with a desktop keyboard and mouse. Click **Load game**, then **Enter Seabright** to enable sound. Use the in-game **Save** and **Load City** buttons; saves stay in that browser's site storage and survive reloads. Clearing site data removes them. The web build has been checked in Codex's desktop browser on macOS; mobile/touch play is not supported.
+
+The [download release](https://github.com/codersusu/game-city-skylines/releases/tag/v0.2.1) includes an **Apple Silicon Mac app** and a **WebGL ZIP** for self-hosting, plus SHA-256 checksums. The Mac app is ad-hoc signed, not notarized; macOS may require **Open Anyway** in Privacy & Security. To run the extracted web ZIP locally, serve its folder with `python3 -m http.server 8080 --bind 127.0.0.1` and visit `http://127.0.0.1:8080/`.
+
 Open this repository as a project in **Unity 6000.6.0f1**, open `Assets/Scenes/Seabright.unity`, and press **Play**. No API key is needed to run the game. All required art, fonts and audio are in the repository.
 
 On a Mac with Apple Silicon and Unity's macOS build support installed:
@@ -44,7 +50,7 @@ bash Tools/build.sh build
 open Builds/Seabright.app
 ```
 
-The build helper uses Unity Hub's standard editor location; set `UNITY_EDITOR` to override it. Close an editor instance using this project before a CLI build. Generated builds are excluded from Git. **Play Seabright.command** launches the local app after it has been built. This Mac target has been verified; other platforms have not.
+The build helper uses Unity Hub's standard editor location; set `UNITY_EDITOR` to override it. Close an editor instance using this project before a CLI build. **Play Seabright.command** launches the local app after it has been built. For WebGL, install Unity's Web Build Support module and run `bash Tools/build.sh web`; output goes to `Builds/WebGL`. Build folders are excluded from the source branch; downloadable binaries live in Releases, and the hosted web files live on `gh-pages`. Intel Mac, Windows, Linux and mobile builds have not been verified.
 
 ### Your first neighborhood
 
@@ -79,7 +85,7 @@ Verification combined deterministic simulation checks, autonomous construction t
 
 ## Development time and cost
 
-These figures cover development **through the completed 0.2.1 audio delivery on 9 September 2026**, before documentation, GitHub publication and trailer production. They are reconstructed from retained local session records, not estimates based on code size.
+These figures cover development **through the completed 0.2.1 audio delivery on 9 September 2026**, before documentation, GitHub publication, trailer production and the web port/release. They are reconstructed from retained local session records, not estimates based on code size.
 
 | Measure | Recorded result |
 |---|---:|

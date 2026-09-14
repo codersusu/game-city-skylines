@@ -2,6 +2,13 @@
 
 Versions describe delivered development stages. They were created locally before the first repository commit; these entries do not imply earlier Git tags or published releases.
 
+## Mac and browser downloads — 2026-09-14
+
+- Added a WebGL build target and branded browser launcher with click-to-enter audio, full-screen play and persistent browser saves.
+- Verified browser loading, road/zoning input, first building development, save/load across a page reload, actual Web Audio signal/mute, night rendering and full-screen layout.
+- Published the first downloadable 0.2.1 release: the previously tested Apple Silicon Mac app, the new desktop WebGL ZIP and checksums.
+- Added direct browser play on GitHub Pages. Gameplay remains version 0.2.1; mobile/touch play and Intel Mac are outside this release.
+
 ## Gameplay trailer — 2026-09-09
 
 - Created an original transparent sea-and-skyline emblem and clean, enlarged opening/closing title cards.

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "mac": "Previously tested Apple Silicon build from 2026-09-09; ad-hoc signed, not notarized.",
+  "web": "Desktop browser build from 2026-09-14; local load/construction/growth/persistence/audio/mute/night/fullscreen smoke checks.",
+  "assets": {
+    "Seabright-macOS-AppleSilicon.zip": {
+      "bytes": 56628898,
+      "sha256": "fa602b9474bbab20c58eea6fc5101a4586fb69c691fa6edf2dcad80a75d4ca14"
+    },
+    "Seabright-WebGL.zip": {
+      "bytes": 20456082,
+      "sha256": "086fd183077869dc3742d9583c6ae159c51d5fae8bb8da8f91ce36867f30f334"
+    }
+  }
+}
