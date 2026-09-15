@@ -1,0 +1,182 @@
+{
+  "format": "Seabright editorial showcase handoff v1; not an official OpenAI submission schema",
+  "status": "Prepared for submission; not submitted to OpenAI",
+  "prepared": "2026-09-15",
+  "reference": "https://developers.openai.com/showcase/void-explorer",
+  "project": {
+    "name": "Seabright",
+    "author": "codersusu",
+    "category": "Games",
+    "model": "GPT-6 Astra",
+    "tools": [
+      "Codex",
+      "Unity 6000.6.0f1",
+      "C#"
+    ],
+    "description": "A coastal city builder where a tiny settlement grows into neighborhoods, modern towers and a stadium.",
+    "live_url": "https://codersusu.github.io/game-city-skylines/",
+    "source_url": "https://github.com/codersusu/game-city-skylines",
+    "downloads_url": "https://github.com/codersusu/game-city-skylines/releases/tag/v0.2.1",
+    "trailer_url": "https://github.com/codersusu/game-city-skylines/blob/main/Media/Trailer/Seabright-trailer.mp4"
+  },
+  "prompt_note": "Editorial direction prompts distilled from the broad original brief, later product feedback and autonomous agent work. They are reusable summaries, not a verbatim chronological record of owner instructions. Screenshots illustrate delivered features, not necessarily the moment a particular prompt was run.",
+  "assets": [
+    {
+      "id": "hero",
+      "source": "Documentation/Images/skyline.png",
+      "bundle_path": "images/00-seabright-skyline.png",
+      "download_url": "https://raw.githubusercontent.com/codersusu/game-city-skylines/4faecc1a658a597d9db247b9f1542c019f828cb6/Documentation/Images/skyline.png",
+      "alt": "A coastal district with glass residential towers, office buildings, smaller homes and a stadium.",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "d0dae622192dadc17ad03420ff05cf3702058ecfdd3f05bf37fc4b95c0b920fe",
+      "provenance": "Unity Editor Play-mode camera render, 0.2.1; interface hidden; earned-city fixture."
+    },
+    {
+      "id": "starter",
+      "source": "Documentation/Images/starter.png",
+      "bundle_path": "images/01-small-beginnings.png",
+      "download_url": "https://raw.githubusercontent.com/codersusu/game-city-skylines/4faecc1a658a597d9db247b9f1542c019f828cb6/Documentation/Images/starter.png",
+      "alt": "A short entry street, two houses, a shop and essential utilities surrounded by open land.",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "493d97765573227e39c66661f299ab39dd6f84b022c2db9370966d0c2010a4b5",
+      "provenance": "Unity Editor Play-mode camera render, 0.2.1; normal starter; interface hidden."
+    },
+    {
+      "id": "street-life",
+      "source": "Artifacts/12-street-life.png",
+      "bundle_path": "images/02-street-life.png",
+      "download_url": "https://raw.githubusercontent.com/codersusu/game-city-skylines/4faecc1a658a597d9db247b9f1542c019f828cb6/Artifacts/12-street-life.png",
+      "alt": "Houses with gardens, an awning-fronted shop, industrial buildings, cars and pedestrians beside a connected road.",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "5af356ffab6cc19be41ef36952a38cc0cbad112471f7a91567b08622e0ec5db8",
+      "provenance": "Retained 0.2.0 standalone growth playtest screenshot; photo mode. Rendering algorithms unchanged in 0.2.1."
+    },
+    {
+      "id": "stadium",
+      "source": "Documentation/Images/stadium.png",
+      "bundle_path": "images/03-stadium.png",
+      "download_url": "https://raw.githubusercontent.com/codersusu/game-city-skylines/4faecc1a658a597d9db247b9f1542c019f828cb6/Documentation/Images/stadium.png",
+      "alt": "A stadium with roof segments, seating and field markings beside a residential street.",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "552b985e65ef6898421a2232d57f3c1a73e79f3d98df81a4473bf93f4a1e4bff",
+      "provenance": "Unity Editor Play-mode camera render, 0.2.1; earned-city fixture; interface hidden."
+    },
+    {
+      "id": "night",
+      "source": "Documentation/Images/night.png",
+      "bundle_path": "images/04-night-coast.png",
+      "download_url": "https://raw.githubusercontent.com/codersusu/game-city-skylines/4faecc1a658a597d9db247b9f1542c019f828cb6/Documentation/Images/night.png",
+      "alt": "Warm tower windows and streetlights illuminate the district and waterfront at night.",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "26188c7db93b3eda20b133cf071ad71a31ae69e7db1b62745e960e138746f9bb",
+      "provenance": "Unity Editor Play-mode camera render, 0.2.1; earned-city fixture; interface hidden."
+    },
+    {
+      "id": "sound",
+      "source": "Documentation/Images/sound-settings.png",
+      "bundle_path": "images/05-sound-and-music.png",
+      "download_url": "https://raw.githubusercontent.com/codersusu/game-city-skylines/4faecc1a658a597d9db247b9f1542c019f828cb6/Documentation/Images/sound-settings.png",
+      "alt": "The Sound and Music panel with master, music, city ambience and sound-effects controls.",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "6cca5241d9f3fd7baafa6f89361c9036c9484f75b28c4dc34092711a71ca165c",
+      "provenance": "Retained 0.2.1 standalone screenshot; panel opened through its public method for capture."
+    },
+    {
+      "id": "growth-check",
+      "source": "Artifacts/13-toolbar-resized.png",
+      "bundle_path": "images/06-earned-city.png",
+      "download_url": "https://raw.githubusercontent.com/codersusu/game-city-skylines/4faecc1a658a597d9db247b9f1542c019f828cb6/Artifacts/13-toolbar-resized.png",
+      "alt": "The city management interface shows 609 residents, completed milestones, towers, a stadium and the construction toolbar.",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d6be2f74e06301c778c12c740e6df545ca49d40afe597d84248fcf71d50bd4f3",
+      "provenance": "Retained 0.2.0 standalone acceptance screenshot at 1920x1080; earned through programmatic calls to the live pointer handler."
+    },
+    {
+      "id": "trailer",
+      "source": "Media/Trailer/title-intro.png",
+      "bundle_path": "images/07-trailer-title.png",
+      "download_url": "https://raw.githubusercontent.com/codersusu/game-city-skylines/4faecc1a658a597d9db247b9f1542c019f828cb6/Media/Trailer/title-intro.png",
+      "alt": "The original gold and teal coastal skyline emblem above the title Seabright on a plain dark background.",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "7457c64c18272e23b0f4d5b1be25cc9269172d6db7088e50887377a224eeab92",
+      "provenance": "Editorial trailer title card, not a gameplay screenshot; original AI-generated emblem with typeset title."
+    },
+    {
+      "id": "emblem",
+      "source": "Media/Brand/Seabright-emblem.png",
+      "bundle_path": "images/08-emblem-transparent.png",
+      "download_url": "https://raw.githubusercontent.com/codersusu/game-city-skylines/4faecc1a658a597d9db247b9f1542c019f828cb6/Media/Brand/Seabright-emblem.png",
+      "alt": "Three teal towers, a gold sun and curved sea waves inside a circular emblem on transparency.",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "dbac726398558e69b517ac4b294d86aae3ed4190a305abf3b39b4efa4709afe4",
+      "provenance": "Original built-in image generation output; actual alpha transparency. Prompt retained in Media/Brand/emblem-prompt.txt."
+    }
+  ],
+  "stages": [
+    {
+      "number": 1,
+      "title": "Start with a playable coastal town",
+      "asset_id": "starter",
+      "summary": "Give the player a small foothold and room to build.",
+      "prompt": "Build an original coastal city-builder demo in Unity, inspired by Cities: Skylines. Start with a tiny supplied settlement and plenty of empty land. Let me draw roads, zone neighborhoods and manage basic services. Choose a focused scope, handle the design and implementation yourself, and make the first few minutes playable."
+    },
+    {
+      "number": 2,
+      "title": "Give every district an identity",
+      "asset_id": "street-life",
+      "summary": "Make the city readable from its buildings and streets.",
+      "prompt": "Make homes, shops and industry look distinct when I place them and after they develop. Give streets visible cars and people, and improve the ground, trees and building materials. Reuse suitable licensed assets first, then create missing details so the whole city shares a consistent coastal style."
+    },
+    {
+      "number": 3,
+      "title": "Let the skyline be earned",
+      "asset_id": "hero",
+      "summary": "Turn a small settlement into a connected district with modern towers.",
+      "prompt": "Make the city grow through real demand, jobs, road access and utilities. Let successful growth unlock offices and residential towers. Keep construction affordable, show why development is stalled, and make the difference between a new settlement and a developed district visible in both the skyline and the economy."
+    },
+    {
+      "number": 4,
+      "title": "Give growth a landmark",
+      "asset_id": "stadium",
+      "summary": "Make the stadium a destination the player can work toward.",
+      "prompt": "Add a modern stadium as a later milestone. Give it a recognizable field, seating, roof and entrance. Make it occupy a real site, cost money and need connected services. It should feel like something the city has earned and fit the scale and style of the surrounding neighborhoods."
+    },
+    {
+      "number": 5,
+      "title": "Change the mood after dark",
+      "asset_id": "night",
+      "summary": "Carry the coastal art direction from daylight into night.",
+      "prompt": "Refine the lighting, water and surface materials so the coast feels cohesive. Add a night view with warm windows, streetlights and a darker waterfront. Keep buildings and roads readable while letting the atmosphere change. Check the result in the actual game camera at both city and street scale."
+    },
+    {
+      "number": 6,
+      "title": "Give the city its own sound",
+      "asset_id": "sound",
+      "summary": "Combine a quiet score, environmental layers and useful action feedback.",
+      "prompt": "Give Seabright original background music, coastal and city ambience, and clear sounds for building, zoning and reaching milestones. Let the soundscape respond to day, night and activity without becoming tiring. Add simple music, ambience, effects and mute controls, and verify that the game actually produces sound."
+    },
+    {
+      "number": 7,
+      "title": "Play the growth journey yourself",
+      "asset_id": "growth-check",
+      "summary": "Verify the experience through a city built under ordinary rules.",
+      "prompt": "Play from the small starter to a city with occupied towers and a working stadium. Use the real construction controls and ordinary budget. Check visible traffic, building growth, services, saving and loading. Accelerate waiting where useful, fix failures you find, and stop repeating checks once the relevant behavior is verified."
+    },
+    {
+      "number": 8,
+      "title": "Make it easy to try and share",
+      "asset_id": "trailer",
+      "summary": "Package the playable game and show its journey in a short trailer.",
+      "prompt": "Ship playable Mac and desktop browser versions with clear launch instructions and persistent saves. Make a short gameplay trailer: a clean title and coastal emblem, construction and growth, skyline and stadium shots, sound, and a closing title. Show real game footage and label accelerated growth so people can understand what they can play."
+    }
+  ]
+}

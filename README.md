@@ -25,6 +25,7 @@ The delivered **0.2.1** demo has a fixed 48 × 48 coastal map, aggregate populat
 | [Implementation and status](Documentation/IMPLEMENTATION.md) | Architecture, build/test instructions, verified results, limitations and next steps |
 | [Changelog](CHANGELOG.md) | Changes from the first prototype through the current build |
 | [Review and screenshots](Documentation/REVIEW.md) | Current game images, feedback outcomes and evidence |
+| [Showcase submission](Documentation/SHOWCASE_SUBMISSION.md) | Selected screenshots, eight concise direction prompts and a downloadable submission kit |
 
 ## Key features
 

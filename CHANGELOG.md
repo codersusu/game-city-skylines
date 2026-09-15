@@ -2,6 +2,12 @@
 
 Versions describe delivered development stages. They were created locally before the first repository commit; these entries do not imply earlier Git tags or published releases.
 
+## Developer showcase submission kit — 2026-09-15
+
+- Added a showcase page pairing eight concise direction prompts with selected gameplay images and the trailer title card.
+- Preserved the one-broad-brief development history; the reusable prompts are explicitly editorial summaries.
+- Packaged original-resolution images, the emblem, prompts and metadata for submission. This prepares the material without submitting it to OpenAI; gameplay remains version 0.2.1.
+
 ## Mac and browser downloads — 2026-09-14
 
 - Added a WebGL build target and branded browser launcher with click-to-enter audio, full-screen play and persistent browser saves.
